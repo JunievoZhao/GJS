@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>评估数据平台</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", "Heiti SC", sans-serif;
+    background-color: #f5f7fa;
+    color: #1a1a1a;
+    font-size: 24px;
+    line-height: 1.8;
+    padding: 40px 20px 60px;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    font-size: 52px;
+    color: #0d47a1;
+    letter-spacing: 4px;
+    margin-bottom: 16px;
+  }
+
+  .subtitle {
+    font-size: 26px;
+    color: #555;
+  }
+
+  .cards {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .card {
+    display: block;
+    text-decoration: none;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    border: 3px solid #0d47a1;
+    border-radius: 16px;
+    padding: 40px 32px;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+
+  .card:hover,
+  .card:focus {
+    background-color: #0d47a1;
+    color: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(13, 71, 161, 0.35);
+  }
+
+  .card .name {
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
+
+  .card .desc {
+    font-size: 22px;
+    color: #555;
+  }
+
+  .card:hover .desc,
+  .card:focus .desc {
+    color: #e3f2fd;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 20px;
+    color: #777;
+  }
+
+  /* 手机等小屏幕时，改成竖排 */
+  @media (max-width: 700px) {
+    body { font-size: 22px; padding: 24px 14px 40px; }
+    h1 { font-size: 38px; }
+    .subtitle { font-size: 22px; }
+    .cards { grid-template-columns: 1fr; gap: 24px; }
+    .card { padding: 30px 20px; }
+    .card .name { font-size: 30px; }
+    .card .desc { font-size: 20px; }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>评估数据平台</h1>
+    <p class="subtitle">请点击下面的板块，查看对应的评估对象与评估方法</p>
+  </header>
+
+  <main class="cards">
+    <a class="card" href="zichan.html">
+      <div class="name">资产评估</div>
+      <div class="desc">设备、存货、无形资产、企业价值</div>
+    </a>
+
+    <a class="card" href="fangdichan.html">
+      <div class="name">房地产估价</div>
+      <div class="desc">住宅、商铺、写字楼、在建工程</div>
+    </a>
+
+    <a class="card" href="tudi.html">
+      <div class="name">土地估价</div>
+      <div class="desc">住宅用地、商业用地、工业用地</div>
+    </a>
+
+    <a class="card" href="kuangyequan.html">
+      <div class="name">矿业权评估</div>
+      <div class="desc">探矿权、采矿权</div>
+    </a>
+  </main>
+
+  <footer>评估数据平台 · 仅供参考</footer>
+
+</body>
+</html>
